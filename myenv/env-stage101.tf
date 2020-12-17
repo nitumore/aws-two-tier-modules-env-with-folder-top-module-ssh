@@ -1,7 +1,6 @@
 module "stage101" {
-                             
-  #source                 = "git@bitbucket.org:accurics/aws-innermodule.git"
-  source                = "git::https://x-token-auth:xVKfETb0oBz2jHSsoITVMY279_U7Wwva3F8esPm3mxzQMvF65tXGOR4VAMds32Gpjfrm28r2JcrRRKvVWc1zyF1rcfqDRt1JE-z3F6Rv4fCaJPsTK-phRu1U@bitbucket.org:accurics/aws-innermodule.git"
+  
+  source                 = "git::ssh://nitumore@github.com/aws-innermodule.git"
   cidr_block             = "10.0.0.0/16"
   vpc_id                 = module.stage101.vpc_id
   subnet_cidr            = "10.0.1.0/24"
@@ -21,3 +20,8 @@ module "stage101" {
 #  cluster_name = "AKS001"
 #  regions      = ["WESTEUROPE", "NORTHEUROPE"]
 #}
+# git@github.com:nitumore/aws-innermodule.git
+# working source  = "git@github.com:nitumore/aws-innermodule.git"
+# replaced 
+# source                 =  "git::https://abc123:d2f9f48a3f77f307494f3e185664016b81778bed@github.com/nitumore/aws-innermodule.git" 
+
