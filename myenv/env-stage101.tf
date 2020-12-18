@@ -15,13 +15,3 @@ module "stage101" {
 }
 
 
-#module "aks-module" {
-#  source       = "git::ssh://github.com:sam-cogan/terraform-samcogan-aks.git"
-#  cluster_name = "AKS001"
-#  regions      = ["WESTEUROPE", "NORTHEUROPE"]
-#}
-# git@github.com:nitumore/aws-innermodule.git
-# working source  = "git@github.com:nitumore/aws-innermodule.git"
-# replaced 
-# source                 =  "git::https://abc123:d2f9f48a3f77f307494f3e185664016b81778bed@github.com/nitumore/aws-innermodule.git" 
-
